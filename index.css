@@ -1,0 +1,200 @@
+:root {
+    /*secondary*/
+    --light-red-secondary: hsla(0, 100%, 50%, 1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: hsl(221, 100%, 96%);
+    font-family: "Hanken Grotesk", sans-serif;
+    color: hsl(224, 30%, 27%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+}
+#wrapper {
+    display: flex;
+    gap: 0;
+    background-color: white;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+}
+.report {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 22rem;
+    padding: 2rem;
+}
+.circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 22rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+.result {
+    margin-top: 30px;
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+.number {
+    font-weight: bolder;
+    font-size: 45px;
+}
+.digit {
+    color: hsl(241, 100%, 89%);
+    font-size: 11px;
+}
+.compliment {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 18px;
+}
+.compliment2 {
+    width: 160px;
+    font-size: 11px;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+/*
+.summary {
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.report2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    font-weight: 700;
+    background-color: hsla(0, 0%, 100%);
+    width: 22rem;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+}
+.title {
+    color: hsl(224, 30%, 27%);
+    font-size: 1.12rem;
+    margin-bottom: 1rem;
+}
+.reaction--wrapper {
+    background-color: rgba(255, 87, 87, 0.1);
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+}
+.reaction {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: hsl(0, 100%, 67%);
+}
+.reaction::before {
+    content: url(assets/images/icon-reaction.svg);
+}
+.memory {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: hsl(39, 100%, 56%);
+}
+.memory::before {
+    content: url(assets/images/icon-memory.svg);
+}
+.memory--wrapper {
+    font-weight: 700;
+    background-color: rgba(255, 176, 31, 0.1);
+}
+.verbal--wrapper {
+    background-color: rgba(0, 189, 145, 0.1);
+}
+.visual--wrapper {
+    background-color: rgba(17, 37, 212, 0.1);
+}
+.verbal {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: hsl(166, 100%, 37%);
+}
+.verbal::before {
+    content: url(assets/images/icon-verbal.svg);
+}
+.visual {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    color: hsl(234, 85%, 45%);
+}
+.visual::before {
+    content: url(assets/images/icon-visual.svg);
+}
+.other-score {
+    color: rgba(48, 59, 90, 0.5);
+}
+.score {
+    color: hsl(224, 30%, 27%);
+}
+.button {
+    padding: 1rem 0.5rem;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    color: #fff;
+    background-color: hsl(224, 30%, 27%);
+    font-weight: bold;
+    transition: all 0.5s;
+}
+.button:hover {
+    background-color: hsl(241, 81%, 54%);
+}
+@media (max-width: 376px) {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    body {
+        height: 112vh;
+    }
+}
+@media (max-width: 768px) {
+    #wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .report {
+        margin-top: 15px;
+    }
+}
