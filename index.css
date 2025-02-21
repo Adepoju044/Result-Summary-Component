@@ -52,10 +52,10 @@ body {
     background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
 }
 .result {
-    margin-top: 30px;
+    margin-top: 4px;
     color: hsl(241, 100%, 89%);
     margin-bottom: 25px;
-    font-size: 14px;
+    font-size: 15px;
 }
 .number {
     font-weight: bolder;
@@ -73,7 +73,7 @@ body {
 }
 .compliment2 {
     width: 160px;
-    font-size: 11px;
+    font-size: 12px;
     text-align: center;
     color: hsl(241, 100%, 89%);
 }
@@ -193,18 +193,48 @@ body {
         height: 120vh;
     }
     .report {
-        height: 60vh;
+        height: 55vh;
     }
     .report2 {
         height: 65vh;
     }
+    .result {
+        margin-top: 25px;
+        font-size: 16px;
+    }
+    .number {
+        font-size: 50px;
+    }
+    .compliment {
+        margin-top: 15px;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .compliment2 {
+        width: 250px;
+        font-size: 14px;
+        text-align: center;
+        color: hsl(241, 100%, 89%);
+    }
 }
-@media (max-width: 768px) {
+@media (max-width: 765px) {
     #wrapper {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 25px;
     }
-    .report {
-        margin-top: 15px;
+    .compliment {
+        margin-top: 13px;
+        font-weight: 600;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .compliment2 {
+        width: 250px;
+        font-size: 14px;
+        text-align: center;
+        color: hsl(241, 100%, 89%);
     }
 }
