@@ -176,17 +176,27 @@ body {
     background-color: hsl(224, 30%, 27%);
     font-weight: bold;
     transition: all 0.5s;
+    cursor: pointer;
 }
 .button:hover {
     background-color: hsl(241, 81%, 54%);
+    cursor: pointer;
 }
 @media (max-width: 376px) {
     #wrapper {
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: -60px;
     }
     body {
-        height: 112vh;
+        height: 120vh;
+    }
+    .report {
+        height: 60vh;
+    }
+    .report2 {
+        height: 65vh;
     }
 }
 @media (max-width: 768px) {
